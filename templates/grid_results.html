@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 50%;
+        }
+        table, th, td {
+            border: 1px solid #007bff;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Results</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Row</th>
+                <th>Column</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row_index, row in enumerate(grid_count) %}
+                {% for col_index, count in enumerate(row) %}
+                <tr>
+                    <td>{{ row_index }}</td>
+                    <td>{{ col_index }}</td>
+                    <td>{{ count }}</td>
+                </tr>
+                {% endfor %}
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2></h2>
+    <img src="{{ url_for('grid_heatmap') }}" alt="Grid Heatmap">
+
+
+</body>
+</html>
