@@ -1,3 +1,10 @@
-Most of the retail stores have faced great decline in revenue due to e-commerce. Major differentiator is that the items are priced lower online than they are offline due to a great number of advertisers present online.
-Here I am trying to implement a solution to increase the revenue of retail stores. This code helps in identifying 'hotspots' or places in the store with the highest footfall and 'dynamically pricing' advertisers and 
-product placers. This is 
+Project Summary:
+Retail stores have faced significant revenue decline due to e-commerce, where competitive pricing driven by a high number of advertisers attracts customers. To address this, I propose a solution to boost retail revenue by leveraging AI to identify "hotspots" — areas with the highest footfall in stores — and enabling dynamic pricing for advertisers and product placements.
+This system uses AI-driven heatmaps and footfall analysis to determine optimal product placement and advertising locations, maximizing customer engagement and revenue generation.
+
+https://github.com/user-attachments/assets/9071a6c5-edff-4277-8d0d-44e86dc0e3ae
+
+Note:
+To run on you local browser: 
+1) download the requirements from requirements.txt
+2) run  python app.py
